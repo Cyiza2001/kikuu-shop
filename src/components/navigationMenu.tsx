@@ -56,11 +56,10 @@ const components: { title: string; href: string; description: string }[] = [
 export function NavigationMenuDemo() {
   return (
     <NavigationMenu className="">
-      <NavigationMenuList>
-        <NavigationMenuItem className="">
-          <div className="relative">
-            <NavigationMenuTrigger>Languages</NavigationMenuTrigger>
-          <NavigationMenuContent className="" >  
+      <NavigationMenuList  className="pl-10">
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Languages</NavigationMenuTrigger>
+          <NavigationMenuContent className="bg-red-700 -mr-3.5" >  
             <ul className="flex flex-col gap-3 md:w-[100px] lg:w-[200px]">
               <li className="">
                 <NavigationMenuLink >
@@ -90,7 +89,7 @@ export function NavigationMenuDemo() {
               </ListItem>
             </ul>
           </NavigationMenuContent>
-          </div>
+          
           
         </NavigationMenuItem>
         <NavigationMenuItem>
