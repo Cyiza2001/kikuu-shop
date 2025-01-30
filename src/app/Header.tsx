@@ -1,14 +1,23 @@
-
+"use client"
 import Image from "next/image";
 import { IoMdHome } from "react-icons/io";
 import { IoPersonSharp } from "react-icons/io5";
 import { MdPhoneAndroid } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
+import { MdMenu } from "react-icons/md";
+import { ImCross } from "react-icons/im";
 import { NavigationMenuDemo } from "@/components/navigationMenu";
+import {useState} from "react"
+import { PiUserCircleMinusThin } from "react-icons/pi";
+
+// {isNavBarVisible ? : }
+
 
 const Header = () => {
+  const [isHeaderFull, setIsHeaderFull] = useState(false)
+const toggleIcon = ()=> setIsHeaderFull(!isHeaderFull)
   return (
-    <div className="flex px-16 justify-between items-center h-8 bg-gray-200">
+    <div className="flex px-16 justify-between items-center h-8 bg-gray-200 relative ">
       {/* THE LEFT SIDE OF THE HEADER */}
       <div className="flex flex-row gap-6 text-sm">
         {/* THE FIRST PART OF THE LEFT HEADER SECTION */}
@@ -31,7 +40,8 @@ const Header = () => {
         </div>
       </div>
       {/* THE RIGHT SIDE OF THE HEADER */}
-      <div className="flex flex-row gap-6 text-sm text-gray-400 font-light">
+      <div className={`lg:flex flex-row gap-6 text-sm text-gray-400 font-light hidden  ${isHeaderFull? "absolute left-0 top-14 bg-green-500 lg:static lg:bg-transparent":"hidden lg:flex"}`}>
+      
         {/* THE FIRST PART OF THE RIGHT HEADER SECTION */}
         <div className="flex flex-row items-center gap-2 hover:text-orange-400 hover:cursor-pointer">
           <MdPhoneAndroid className="h-4" />
@@ -40,6 +50,12 @@ const Header = () => {
         {/* LANGUAGE DROPDOWN MENU */}
         <NavigationMenuDemo />
       </div>
+        {/* THE MENU AND CROSS ICONS  FOR RESPONSIVENESS */}
+        <div className="absolute right-4 lg:hidden text-black text-2xl" 
+          onClick={() =>
+          toggleIcon()
+          }
+        > {isHeaderFull? <ImCross />: <MdMenu />}</div>
     </div>
   );
 };
