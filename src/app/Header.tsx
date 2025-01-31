@@ -1,14 +1,14 @@
 "use client"
-import Image from "next/image";
+// import Image from "next/image";
 import { IoMdHome } from "react-icons/io";
 import { IoPersonSharp } from "react-icons/io5";
 import { MdPhoneAndroid } from "react-icons/md";
-import { IoIosArrowDown } from "react-icons/io";
+// import { IoIosArrowDown } from "react-icons/io";
 import { MdMenu } from "react-icons/md";
 import { ImCross } from "react-icons/im";
 import { NavigationMenuDemo } from "@/components/navigationMenu";
 import {useState} from "react"
-import { PiUserCircleMinusThin } from "react-icons/pi";
+// import { PiUserCircleMinusThin } from "react-icons/pi";
 
 // {isNavBarVisible ? : }
 

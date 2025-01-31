@@ -63,7 +63,7 @@ export function NavigationMenuDemo() {
             <ul className="flex flex-col gap-3 md:w-[100px] lg:w-[200px]">
               <li className="">
                 <NavigationMenuLink >
-                  <a
+                  <Link
                     className="flex h-full w-full  select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline"
                     href="/"
                   >

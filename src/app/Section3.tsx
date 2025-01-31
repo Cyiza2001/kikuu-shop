@@ -4,7 +4,7 @@ import { FaTruck } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
 import { MdOutlinePayment } from "react-icons/md";
 import { MdPhoneIphone } from "react-icons/md";
-import { TfiMenuAlt } from "react-icons/tfi";
+// import { TfiMenuAlt } from "react-icons/tfi";
 
 import Image from "next/image";
 const categories = [{cat:"Clothing", icon:<FaAngleRight /> },{cat:"Shoes", icon:<FaAngleRight /> },{cat:"Luggage & Bags", icon:<FaAngleRight /> },{cat:"Watch & Jewerly", icon:<FaAngleRight /> },{cat:"Kids & Toys", icon:<FaAngleRight /> },{cat:"Home & Appliances", icon:<FaAngleRight /> },{cat:"Beauty", icon:<FaAngleRight /> },{cat:"Weddings", icon:<FaAngleRight /> },{cat:"Hair", icon:<FaAngleRight /> },{cat:"Phones & Tel", icon:<FaAngleRight /> },{cat:"Electronics", icon:<FaAngleRight /> },{cat:"Computer & Office", icon:<FaAngleRight /> },{cat:"Automobile Accessory &...", icon:<FaAngleRight /> }]
@@ -111,7 +111,7 @@ const Section3 = ()=>{
     stuff.map((item, i)=>
       (
         <div className="bg-gray-50 pl-4 py-3 text-xs">
-          <div className="flex flex-row gap-1 items-center mb-1">
+          <div className="flex flex-row gap-1 items-center mb-1 " key={i}>
            <div className="text-blue-500 text-2xl">{item.icon}</div>
            <div className="flex flex-col ">
             <p className="font-bold">{item.title}</p>
