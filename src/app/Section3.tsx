@@ -4,18 +4,19 @@ import { FaTruck } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
 import { MdOutlinePayment } from "react-icons/md";
 import { MdPhoneIphone } from "react-icons/md";
+import { TfiMenuAlt } from "react-icons/tfi";
 
 import Image from "next/image";
 const categories = [{cat:"Clothing", icon:<FaAngleRight /> },{cat:"Shoes", icon:<FaAngleRight /> },{cat:"Luggage & Bags", icon:<FaAngleRight /> },{cat:"Watch & Jewerly", icon:<FaAngleRight /> },{cat:"Kids & Toys", icon:<FaAngleRight /> },{cat:"Home & Appliances", icon:<FaAngleRight /> },{cat:"Beauty", icon:<FaAngleRight /> },{cat:"Weddings", icon:<FaAngleRight /> },{cat:"Hair", icon:<FaAngleRight /> },{cat:"Phones & Tel", icon:<FaAngleRight /> },{cat:"Electronics", icon:<FaAngleRight /> },{cat:"Computer & Office", icon:<FaAngleRight /> },{cat:"Automobile Accessory &...", icon:<FaAngleRight /> }]
 const stuff = [{icon:<FaTruck />, title:"Great Value", detail:"Continous promotions"},{icon:<BiWorld />, title:"Worldwide Delivery", detail:"Supported more than 10 countries."},{icon:<MdOutlinePayment />, title:"Safe Payment", detail:"Popular and safe payment methods"},{icon:<MdPhoneIphone />, title:"Shop with Confidence", detail:"Protect your purchase and delivery."},]
 const Section3 = ()=>{
     return(
+     
 
-        <div className="flex flex-row gap-4 mx-16 h-[520px] mb-10 ">
-    
-      
+         
+          <div className="flex flex-row  gap-4  lg:mx-16 items-center justify-center  h-[520px] mb-10 ">
         {/* CATEGORIES */}
-        <div className="flex flex-col w-[250px]  bg-white ">
+        <div className="lg:flex flex-col w-[250px]  bg-white hidden ">
           {categories.map((cat, i)=>(
               <div key={i} className="flex flex-row gap-2 items-center justify-between h-10 pl-6 pr-3 hover:bg-gray-100 hover:text-orange-600 group">
                 <p>{cat.cat}</p>
@@ -26,7 +27,7 @@ const Section3 = ()=>{
         </div>
 
                   {/*  THE MIDDLE SECTION */}
-        <div className="flex flex-col gap-2 w-[700px] h-[520px]">
+        <div className="flex flex-col gap-2 sm:w-[700px] w-[650px] h-[520px]">
             {/* THE TOP MOST PART OF THE MIDDLE SECTION */}
     
       <div className="h-[320px] relative">
@@ -88,7 +89,7 @@ const Section3 = ()=>{
       </div>
         </div>
 {/* THE LAST PART OF SECTION3 */}
-   <div className="flex flex-col bg-white h-[520px] w-[250px] px-4">
+   <div className="lg:flex flex-col bg-white h-[520px] w-[250px] px-4 hidden">
     <div className="flex justify-center items-center mt-8 mb-6">
       <div className="rounded-full w-[70px] h-[70px]  bg-gray-100 flex items-center justify-center">
       <Image
@@ -124,6 +125,7 @@ const Section3 = ()=>{
    </div>
 
     </div>
+      
     )
 }
 

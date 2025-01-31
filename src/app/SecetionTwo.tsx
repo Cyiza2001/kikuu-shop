@@ -8,7 +8,7 @@ import { IoPersonSharp } from "react-icons/io5";
 
 const SectionTwo = ()=>{
     return(
-       <div className="flex flex-row pl-16 items-center pr-7 h-24 bg-white">
+       <div className="flex lg:flex-row flex-col gap-4 pl-16 items-center pr-7 lg:h-24 h-52 bg-white">
         <Image 
         src ="/kikkusho.webp"
         alt="kikku shop logo"
@@ -16,10 +16,10 @@ const SectionTwo = ()=>{
         height={50}
         />
       {/* THE SEARCH BAR SECTION */}
-        <div className="flex  flex-row border-[1px] gap-2 border-orange-600 rounded-3xl w-[500px] h-[40px] items-center  pl-4 ml-10  mr-10 ">
+        <div className="flex  flex-row border-[1px] gap-2 border-orange-600 rounded-3xl sm:w-[500px] w-[200px] h-[40px] items-center  pl-4 ml-10  mr-10 ">
          <IoMdSearch className="text-orange-600 text-2xl" />
          <InputDemo/>
-        <div className="bg-orange-600 font-extrabold h-full w-[100px] rounded-r-3xl text-white flex items-center px-3 text-lg" >Search</div>
+        <div className="bg-orange-600 font-extrabold h-full lg:w-[100px] w-[100px] rounded-r-3xl text-white flex items-center px-3 text-lg " >Search</div>
         </div> 
          {/* THE LAST PART OF SECTION TWO */}
          <div className="flex flex-row gap-5 ml-20">
