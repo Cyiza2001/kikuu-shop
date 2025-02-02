@@ -75,7 +75,7 @@ export function NavigationMenuDemo() {
                       Beautifully designed components built with Radix UI and
                       Tailwind CSS.
                     </p>
-                  </a>
+                  </Link >
                 </NavigationMenuLink>
               </li>
               <ListItem href="/docs" title="Introduction">
