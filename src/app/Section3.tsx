@@ -110,8 +110,8 @@ const Section3 = ()=>{
     {
     stuff.map((item, i)=>
       (
-        <div className="bg-gray-50 pl-4 py-3 text-xs">
-          <div className="flex flex-row gap-1 items-center mb-1 " key={i}>
+        <div className="bg-gray-50 pl-4 py-3 text-xs" key={i}>
+          <div className="flex flex-row gap-1 items-center mb-1 " >
            <div className="text-blue-500 text-2xl">{item.icon}</div>
            <div className="flex flex-col ">
             <p className="font-bold">{item.title}</p>

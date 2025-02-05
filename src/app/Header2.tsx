@@ -1,7 +1,7 @@
 import { TfiMenuAlt } from "react-icons/tfi";
 const Header2 = ()=>{
     return(
-        <div className="flex flex-row w-full justify-center  ">
+        <div className="flex flex-row w-full justify-center lg:justify-start px-4 lg:px-16 ">
         <div className="flex flex-row h-12 sm:w-[700px] w-[380px] md:gap-8 gap-4 ">
              <div className="bg-orange-600 text-white flex flex-row gap-2  items-center font-bold justify-center md:text-xl text-xs w-[225px]  ">
         <TfiMenuAlt />
