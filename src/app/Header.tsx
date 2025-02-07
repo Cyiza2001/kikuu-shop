@@ -17,9 +17,9 @@ const Header = () => {
   const [isHeaderFull, setIsHeaderFull] = useState(false)
 const toggleIcon = ()=> setIsHeaderFull(!isHeaderFull)
   return (
-    <div className="flex px-16 justify-between items-center h-8 bg-gray-200 relative ">
+    <div className="flex sm:px-16 px-4  sm:justify-between  items-center h-8 bg-gray-200 relative ">
       {/* THE LEFT SIDE OF THE HEADER */}
-      <div className="flex flex-row gap-6 text-sm">
+      <div className="flex flex-row gap-6 sm:text-sm text-xs">
         {/* THE FIRST PART OF THE LEFT HEADER SECTION */}
         <div className="flex flex-row justify-center h-10 items-center gap-2 text-gray-600 font-light hover:text-orange-400 hover:cursor-pointer">
           <IoMdHome className="h-5 w-5" />
