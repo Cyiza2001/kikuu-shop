@@ -18,7 +18,7 @@ const Section3 = ()=>{
         {/* CATEGORIES */}
         <div className="lg:flex flex-col w-[250px]  bg-white hidden ">
           {categories.map((cat, i)=>(
-              <div key={i} className="flex flex-row gap-2 items-center justify-between h-10 pl-6 pr-3 hover:bg-gray-100 hover:text-orange-600 group">
+              <div key={i} className="flex flex-row gap-2 items-center justify-between h-10 pl-4 pr-3 hover:bg-gray-100 hover:text-orange-600 group xl:text-base">
                 <p>{cat.cat}</p>
                 <p className="hidden group-hover:block">  {cat.icon}</p>
                
@@ -27,10 +27,10 @@ const Section3 = ()=>{
         </div>
 
                   {/*  THE MIDDLE SECTION */}
-        <div className="flex flex-col gap-2 sm:w-[700px] w-[650px] h-[520px]">
+        <div className="flex flex-col gap-2 sm:w-[90%] w-full max-w-[700px] h-[520px]">
             {/* THE TOP MOST PART OF THE MIDDLE SECTION */}
     
-      <div className="h-[320px] relative">
+      <div className="flex h-[320px] sm:w-[90%]  relative">
       <Image 
         src ="/market-kikuu.webp"
         alt="market kikuu picture"
@@ -41,7 +41,7 @@ const Section3 = ()=>{
       {/* THE LOWER PART OF THE MIDDLE SECTION */}
       <div className="flex flex-col gap-1  h-[200px] ">
         {/* THE UPPER PART */}
-       <div className="flex flex-row gap-2 h-[100px] w-[700px]">
+       <div className="flex md:flex-row flex-col gap-2 h-[100px] w-[700px]">
         <div className="relative w-[350px] ">
         <Image 
         src ="/pc-men-shoes-banner.jpg"
@@ -66,7 +66,7 @@ const Section3 = ()=>{
        </div>
 
          {/* THE LOWER PART */}
-         <div className="flex flex-row gap-2 h-[100px] w-[700px]">
+         <div className="flex md:flex-row flex-col gap-2 h-[100px] max-w-[700px]">
         <div className="relative w-[350px] ">
         <Image 
         src ="/pc-phone-banner.jpg"
@@ -89,7 +89,7 @@ const Section3 = ()=>{
       </div>
         </div>
 {/* THE LAST PART OF SECTION3 */}
-   <div className="lg:flex flex-col bg-white h-[520px] w-[250px] px-4 hidden">
+   <div className="xl:flex flex-col bg-white h-[520px] w-[250px] px-4 hidden">
     <div className="flex justify-center items-center mt-8 mb-6">
       <div className="rounded-full w-[70px] h-[70px]  bg-gray-100 flex items-center justify-center">
       <Image
