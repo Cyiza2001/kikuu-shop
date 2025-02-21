@@ -14,6 +14,7 @@ const SectionTwo = ()=>{
         alt="kikku shop logo"
         width={220}
         height={50}
+        priority
         />
       {/* THE SEARCH BAR SECTION */}
         <div className="flex  flex-row border-[1px] gap-2 border-orange-600 rounded-3xl sm:w-[500px] w-[200px] h-[40px] items-center  pl-4 ">

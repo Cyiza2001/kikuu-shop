@@ -27,22 +27,22 @@ const Section3 = ()=>{
         </div>
 
                   {/*  THE MIDDLE SECTION */}
-        <div className="flex flex-col gap-2 sm:w-[90%] w-full max-w-[700px] h-[520px]">
+        <div className="flex flex-col gap-2 w-[90%]  max-w-[700px] lg:h-[520px] h-auto">
             {/* THE TOP MOST PART OF THE MIDDLE SECTION */}
     
-      <div className="flex h-[320px] sm:w-[90%]  relative">
+      <div className="flex h-[320px]   relative">
       <Image 
         src ="/market-kikuu.webp"
         alt="market kikuu picture"
-        layout="fill"
-        objectFit="cover"
+        fill
+        style={{ objectFit: "cover" }}
         />
       </div>
       {/* THE LOWER PART OF THE MIDDLE SECTION */}
-      <div className="flex flex-col gap-1  h-[200px] ">
+      <div className="flex flex-col gap-1  lg:h-[200px] h-[400px] ">
         {/* THE UPPER PART */}
-       <div className="flex md:flex-row flex-col gap-2 h-[100px] w-[700px]">
-        <div className="relative w-[350px] ">
+       <div className="flex md:flex-row flex-col gap-2 h-[100px] w-full">
+        <div className="relative md:w-[50%] w-full max-w-[350px] ">
         <Image 
         src ="/pc-men-shoes-banner.jpg"
         alt="phone photo"
@@ -51,7 +51,7 @@ const Section3 = ()=>{
         />
         </div>
 
-        <div className="relative w-[350px] ">
+        <div className="relative w-[50%] max-w-[350px]] ">
         <Image 
         src ="/pc-women-shoes-banner.webp"
         alt="phone photo"
@@ -66,8 +66,8 @@ const Section3 = ()=>{
        </div>
 
          {/* THE LOWER PART */}
-         <div className="flex md:flex-row flex-col gap-2 h-[100px] max-w-[700px]">
-        <div className="relative w-[350px] ">
+         <div className="flex md:flex-row flex-col gap-2 h-[100px] w-full">
+        <div className="relative w-[50%] max-w-[350px] ">
         <Image 
         src ="/pc-phone-banner.jpg"
         alt="phone photo"
@@ -76,7 +76,7 @@ const Section3 = ()=>{
         />
         </div>
 
-        <div className="relative w-[350px] ">
+        <div className="relative w-[50%] max-w-[350px]">
         <Image 
         src ="/pc-use-cate-banner.jpg"
         alt="phone photo"
