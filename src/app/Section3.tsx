@@ -11,10 +11,7 @@ const categories = [{cat:"Clothing", icon:<FaAngleRight /> },{cat:"Shoes", icon:
 const stuff = [{icon:<FaTruck />, title:"Great Value", detail:"Continous promotions"},{icon:<BiWorld />, title:"Worldwide Delivery", detail:"Supported more than 10 countries."},{icon:<MdOutlinePayment />, title:"Safe Payment", detail:"Popular and safe payment methods"},{icon:<MdPhoneIphone />, title:"Shop with Confidence", detail:"Protect your purchase and delivery."},]
 const Section3 = ()=>{
     return(
-     
-
-         
-          <div className="flex flex-row  gap-4  lg:mx-16 items-center justify-center  h-[520px] mb-10 ">
+          <div className="flex flex-row  gap-4  lg:mx-16 items-center justify-center  h-[520px] mb-6 ">
         {/* CATEGORIES */}
         <div className="lg:flex flex-col w-[250px]  bg-white hidden ">
           {categories.map((cat, i)=>(
@@ -27,7 +24,7 @@ const Section3 = ()=>{
         </div>
 
                   {/*  THE MIDDLE SECTION */}
-        <div className="flex flex-col gap-2 w-[90%]  max-w-[700px] lg:h-[520px] h-auto">
+        <div className="flex flex-col gap-2 w-[90%]  max-w-[700px] h-[520px] max-h-[720px]">
             {/* THE TOP MOST PART OF THE MIDDLE SECTION */}
     
       <div className="flex h-[320px]   relative">
@@ -39,24 +36,24 @@ const Section3 = ()=>{
         />
       </div>
       {/* THE LOWER PART OF THE MIDDLE SECTION */}
-      <div className="flex flex-col gap-1  lg:h-[200px] h-[400px] ">
+      <div className="flex flex-col gap-1 h-[200px]  ">
         {/* THE UPPER PART */}
-       <div className="flex md:flex-row flex-col gap-2 h-[100px] w-full">
-        <div className="relative md:w-[50%] w-full max-w-[350px] ">
+       <div className="flex flex-row  gap-2 h-[100px]  w-full">
+        <div className="relative sm:w-[50%] h-full w-full  ">
         <Image 
         src ="/pc-men-shoes-banner.jpg"
         alt="phone photo"
-      layout="fill"
-        objectFit="cover"
+        fill
+        style={{ objectFit: "cover" }}
         />
         </div>
 
-        <div className="relative w-[50%] max-w-[350px]] ">
+        <div className="relative sm:w-[50%] h-full w-full ">
         <Image 
         src ="/pc-women-shoes-banner.webp"
         alt="phone photo"
-        layout="fill"
-        objectFit="cover"
+        fill
+        style={{ objectFit: "cover" }}
         />
         </div>
 
@@ -66,22 +63,23 @@ const Section3 = ()=>{
        </div>
 
          {/* THE LOWER PART */}
-         <div className="flex md:flex-row flex-col gap-2 h-[100px] w-full">
-        <div className="relative w-[50%] max-w-[350px] ">
+        
+         <div className="sm:flex hidden flex-row gap-2 h-[100px] w-full">
+        <div className="relative sm:w-[50%] h-full w-full  ">
         <Image 
         src ="/pc-phone-banner.jpg"
         alt="phone photo"
-        layout="fill"
-        objectFit="cover"
+        fill
+        style={{ objectFit: "cover" }}
         />
         </div>
 
-        <div className="relative w-[50%] max-w-[350px]">
+        <div className="relative sm:w-[50%] h-[100px] w-full ">
         <Image 
         src ="/pc-use-cate-banner.jpg"
         alt="phone photo"
-       layout="fill"
-        objectFit="cover"
+        fill
+        style={{ objectFit: "cover" }}
         />
         </div>
 
