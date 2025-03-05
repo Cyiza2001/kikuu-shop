@@ -23,7 +23,7 @@ const SectionTwo = ()=>{
         <div className="bg-orange-600 font-extrabold h-full w-[100px]  rounded-r-3xl text-white sm:flex hidden items-center px-3 text-lg  " >Search</div>
         </div> 
          {/* THE LAST PART OF SECTION TWO */}
-         <div className="lg:flex flex-row lg:gap-5  lg:justify-start justify-between  lg:ml-20 hidden">
+         <div className="xl:flex flex-row lg:gap-5  lg:justify-start justify-between  lg:ml-20 hidden">
             {/* CART SECTION */}
            <div className="border-[1px] border-orange-600 text-orange-600 gap-4 rounded-3xl w-[120px] h-[40px] flex items-center justify-center">
                <BiSolidCart className=" text-2xl" />

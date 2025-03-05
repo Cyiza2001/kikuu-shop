@@ -6,9 +6,9 @@ const cards =[{img:"/tripod.webp", desc1:"New electric money spit ",desc2:"money
 
 const Section4 = ()=>{
     return(
-        <div className="flex flex-row h-72 w-full px-16 mb-10">
+        <div className="flex flex-row h-72 w-[87vw] lg:mx-16 sm:justify-center lg:justify-start mb-10">
             {/* THE TIMER AND PROMOTION SECTION */}
-            <div className="flex-none bg-[#DA1736] h-full w-[15%] px-4 py-8 ">
+            <div className="flex-none bg-[#DA1736] h-full min-w-[15%] px-4 py-8 ">
                 {/* THE DESCRIPTION OF THE PROMOTION */}
                 <div className="flex flex-col  gap-4">
                     <p className="text-white font-bold text-2xl">Flash Sale</p>
@@ -26,14 +26,14 @@ const Section4 = ()=>{
                 </div>
                 {/* THE LOWER BUTTON */}
                
-                <button className=" flex flex-row items-center justify-center gap-2 rounded-2xl bg-white  text-red-700 font-bold mt-8 py-1"> <p>View All </p>{<FaAngleRight />}</button>
+                <button className=" flex flex-row items-center justify-center gap-2 rounded-2xl bg-white w-full  text-red-700 font-bold mt-8 py-1"> <p>View All </p>{<FaAngleRight />}</button>
 
               
             </div>
 
             {/* THE LEFT CARDS */} 
-            <div className="relative flex flex-1 w-[85%]">
-            <div className=" flex flex-row bg-white gap-10 w-full   h-full px-6 py-4 overflow-x-scroll ">
+            <div className="relative flex flex-1 max-w-[85%]">
+            <div className=" flex flex-row bg-white gap-10 w-full  h-full px-6 py-4 overflow-x-scroll ">
                 
                 {
                    cards.map((card, index)=>(

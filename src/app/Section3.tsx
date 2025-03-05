@@ -11,7 +11,7 @@ const categories = [{cat:"Clothing", icon:<FaAngleRight /> },{cat:"Shoes", icon:
 const stuff = [{icon:<FaTruck />, title:"Great Value", detail:"Continous promotions"},{icon:<BiWorld />, title:"Worldwide Delivery", detail:"Supported more than 10 countries."},{icon:<MdOutlinePayment />, title:"Safe Payment", detail:"Popular and safe payment methods"},{icon:<MdPhoneIphone />, title:"Shop with Confidence", detail:"Protect your purchase and delivery."},]
 const Section3 = ()=>{
     return(
-          <div className="flex flex-row  gap-4  lg:mx-16 items-center justify-center  h-[520px] mb-6 ">
+          <div className="flex flex-row  gap-4  lg:mx-16 justify-center  h-[520px] mb-6 ">
         {/* CATEGORIES */}
         <div className="lg:flex flex-col w-[250px]  bg-white hidden ">
           {categories.map((cat, i)=>(
